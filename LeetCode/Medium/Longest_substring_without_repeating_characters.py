@@ -3,7 +3,7 @@ class Solution(object):
       char_index = {}
       # write down the position where string last shown up.
       left = 0
-      ans = 0
+      ans = 0   
 
       for right in range(len(s)):
         current_char = s[right]
