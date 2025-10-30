@@ -21,6 +21,7 @@ for i in range(1, amount + 1):
 dp[i - coin] + 1 这行代码的含义是凑出金额[i - coin] 的最少硬币数，然后+1就是加上当前选择的这枚硬币，在所有可能的硬币选择中，找到硬币数最少的方案。
 
 最后判断一下是否可以组成amount，如果凑不出就return-1:
+
 ```python
 if dp[amount] == amount + 1:
 	return - 1
